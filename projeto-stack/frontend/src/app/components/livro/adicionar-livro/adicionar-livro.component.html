@@ -1,0 +1,29 @@
+<div style="font-size: 12px">
+<mat-card>
+    <mat-card-title>Adicionar Livro</mat-card-title>
+    <form>
+        <mat-form-field class="custom-form-field">
+            <input matInput placeholder="Titulo" [(ngModel)]="livro.titulo" name = "titulo">
+        </mat-form-field>
+        <mat-form-field class="custom-form-field">
+            <input matInput placeholder="Quantidade" [(ngModel)]="livro.exemplares" name = "exemplares">
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="custom-form-field">
+            Categoria
+            <mat-select [(ngModel)]="categoria" name="categoria">
+              <mat-option *ngFor="let categoria of categorias" [value]="categoria.value">
+                {{categoria.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </form>
+</mat-card>
+</div>
+
+<button mat-raised-button (click)="adicionarLivro()" color="primary" class="button">
+    Salvar
+</button>
+
+<button mat-raised-button (click)="retornar()" class="button">
+    Cancelar
+</button>

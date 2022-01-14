@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo {
+    max-height: 50px;
+}
+
+.header .title-group {
+    padding-left: 25px;
+}
+
+.saida {
+    position: relative;
+    margin-top: 0px;
+    margin-right: 100px;
+    float: right;
+    padding-left: 90rem;
+}
+
+.logo_saida {
+    max-height: 25px;
+}

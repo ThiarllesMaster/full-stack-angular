@@ -1,0 +1,16 @@
+<div style="font-size: 12px">
+    <mat-card>
+        <mat-card-title>Bem vindo ao sistema da Biblioteca virtual</mat-card-title>
+        <form (ngSubmit)="onSubmit()" #form="ngForm">
+            <div class="form-group">
+                <label class="label">Nome</label>
+                <input class="form-control" [(ngModel)]= "login.username" required name="username">
+            </div>
+            <div class="form-group">
+                <label class="label">Senha</label>
+                <input class="form-control" [(ngModel)]= "login.password" required type="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+        </form>
+    </mat-card>
+</div>
